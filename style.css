@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: radial-gradient(whitesmoke, rgb(0, 0, 0));
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #000;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+button:active {
+    background-color: #333;
+    box-shadow: 0 0 5px #000;
+}
+
+p {
+    color: #000;
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#game-stats {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+#player-choice,
+#computer-choice {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #000;
+    font-weight: bold;
+}
+
+#message {
+    color: #a60707;
+    font-weight: bold;
+}
