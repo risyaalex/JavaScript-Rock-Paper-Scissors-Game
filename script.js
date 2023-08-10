@@ -89,3 +89,12 @@ function updateGameStats(result) {
         newGameStats.innerHTML = `Wins: ${gameStats.wins} | Losses: <span class="stats">${gameStats.losses}</span> | Ties: ${gameStats.ties}`;
     }
 }
+
+function percentStats() {
+    let totalGames = gameStats.wins + gameStats.losses + gameStats.ties;
+    let winPercentage = (gameStats.wins / totalGames) * 100;
+    let lossPercentage = (gameStats.losses / totalGames) * 100;
+    let tiePercentage = (gameStats.ties / totalGames) * 100;
+    if (!isNaN(winPercentage) && !isNaN(lossPercentage) && !isNaN(tiePercentage))
+    newGameStats.innerHTML = `Wins: <span class="stats">${winPercentage.toFixed(0)}%</span> | Losses: <span class="stats">${lossPercentage.toFixed(0)}%</span> | Ties: <span class="stats">${tiePercentage.toFixed(0)}%</span>`;
+}
