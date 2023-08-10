@@ -58,6 +58,12 @@ p {
     flex-wrap: wrap;
 }
 
+.buttons button:last-child {
+    width: 70%;
+    margin-top: 10px;
+    background-color: #666;
+}
+
 #game-stats {
     font-weight: bold;
     font-size: 1.6rem;
