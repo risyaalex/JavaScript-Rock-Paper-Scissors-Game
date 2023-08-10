@@ -64,12 +64,14 @@ function compareChoices(player, computer) {
         gameStats.wins += 1;
         result = "win";
         updateGameStats(result);
-        displayMessage("You won! ;)");
+        let playerCap = player.charAt(0).toUpperCase() + player.slice(1);
+        displayMessage("You won! " + playerCap + " beats " + computer + " ;)");
     } else {
         gameStats.losses += 1;
         result = "lose";
         updateGameStats(result);
-         displayMessage("You lose! :(");
+         let computerCap = computer.charAt(0).toUpperCase() + computer.slice(1);
+         displayMessage("You lose! "+ computerCap + " beats " + player + " :(");
     }
 }
 
@@ -80,10 +82,10 @@ function displayMessage(text) {
 function updateGameStats(result) {
     console.log("result" + result)
     if (result === "tie") {
-        newGameStats.innerText = `Wins: ${gameStats.wins} | Losses: ${gameStats.losses} | Ties: ${gameStats.ties}`;
+        newGameStats.innerHTML = `Wins: ${gameStats.wins} | Losses: ${gameStats.losses} | Ties: <span class="stats">${gameStats.ties}</span>`;
     } else if (result === "win") {
-        newGameStats.innerText = `Wins: ${gameStats.wins} | Losses: ${gameStats.losses} | Ties: ${gameStats.ties}`;
+        newGameStats.innerHTML = `Wins: <span class="stats">${gameStats.wins}</span> | Losses: ${gameStats.losses} | Ties: ${gameStats.ties}`;
     } else if (result === "lose") {
-        newGameStats.innerText = `Wins: ${gameStats.wins} | Losses: ${gameStats.losses} | Ties: ${gameStats.ties}`;
+        newGameStats.innerHTML = `Wins: ${gameStats.wins} | Losses: <span class="stats">${gameStats.losses}</span> | Ties: ${gameStats.ties}`;
     }
 }

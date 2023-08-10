@@ -13,6 +13,7 @@ body {
 
 h1 {
     color: #000;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -45,6 +46,12 @@ p {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+.container {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .buttons {
     display: flex;
     justify-content: center;
@@ -52,20 +59,21 @@ p {
 
 #game-stats {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.6rem;
     background-color: #fff;
     padding: 20px;
+    border-radius: 5px;
 }
 
 #player-choice,
 #computer-choice {
-    font-size: 16px;
+    font-size: 1.2 rem;
     margin-top: 10px;
     color: #000;
     font-weight: bold;
 }
 
-#message {
-    color: #a60707;
+#message, .stats {
+    color: #df0d0d;
     font-weight: bold;
 }
