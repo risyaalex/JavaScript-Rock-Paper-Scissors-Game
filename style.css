@@ -77,3 +77,7 @@ p {
     color: #df0d0d;
     font-weight: bold;
 }
+
+img{
+    max-width:200px;
+}
