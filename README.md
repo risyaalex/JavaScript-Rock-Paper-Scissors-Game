@@ -1,8 +1,7 @@
 # JavaScript-Rock-Paper-Scissors-Game
 "Rock, Paper, Scissors" game using HTML, CSS, and Javascript.
 
-![image](https://github.com/risyaalex/JavaScript-Rock-Paper-Scissors-Game/assets/140414559/2438a291-3321-4ac5-b90c-79b94293bd95)
-
+![image](https://github.com/risyaalex/JavaScript-Rock-Paper-Scissors-Game/assets/140414559/14bff336-94af-4d1d-bd29-f86fa1f74b85)
 
 ## Demo
 
