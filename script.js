@@ -95,6 +95,7 @@ function percentStats() {
     let winPercentage = (gameStats.wins / totalGames) * 100;
     let lossPercentage = (gameStats.losses / totalGames) * 100;
     let tiePercentage = (gameStats.ties / totalGames) * 100;
-    if (!isNaN(winPercentage) && !isNaN(lossPercentage) && !isNaN(tiePercentage))
+    if (!isNaN(winPercentage) && !isNaN(lossPercentage) && !isNaN(tiePercentage)) {
     newGameStats.innerHTML = `Wins: <span class="stats">${winPercentage.toFixed(0)}%</span> | Losses: <span class="stats">${lossPercentage.toFixed(0)}%</span> | Ties: <span class="stats">${tiePercentage.toFixed(0)}%</span>`;
+    }
 }
